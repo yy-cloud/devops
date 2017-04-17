@@ -7,5 +7,9 @@ sudo yum install nrpe nagios-plugins-all -y
 sudo systemctl start nrpe.service
 sudo systemctl enable nrpe.service
 
+# After change nrpe config
+
+sudo systemctl restart nrpe.service
+
 # References
 # - https://www.digitalocean.com/community/tutorials/how-to-install-nagios-4-and-monitor-your-servers-on-centos-7
